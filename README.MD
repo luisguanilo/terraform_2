@@ -71,3 +71,21 @@ variable "web_server_port" {
 }
 
 1. crear los archivos variables.tf y terraform.tfvars
+2. se integra la codificacion en cada archivo (variables.tf y terraform.tfvars)
+3. se adiciona codigo al archivo main.tf segun el codigo proporcionado, modificanco el main.tf para que despliegue dos contenedores usando variable en una y la otra sigue con valor fijo.
+4. luego iniciamos con terraform init y luego terraform plan, y finalmente con terraform apply.
+5. respondemos con yes, y ya tenemos dos recursos desplegados usando variables en un contenedor y fijo en otro contenedor
+Lo siguiente es  la confirmacion al momento de ejecutar el terraform apply
+##
+docker_container.container_server_web: Destroying... [id=4305e37b99c5efe5c5f5f215fa7f96c91023d971fde2d0ba2f468c7a1c0241b5]
+docker_container.container_server_web_2: Destroying... [id=f3f0a7c6b489438b2f91b2ce71d329271a4269fcdef1345c20b58a85b8a9645a]
+docker_container.container_server_web: Destruction complete after 1s
+docker_container.container_server_web: Creating...
+docker_container.container_server_web_2: Destruction complete after 1s
+docker_container.container_server_web_2: Creating...
+docker_container.container_server_web: Creation complete after 2s [id=fff9b2bb7485ad9e305f469dd3ce8bed78e86203e7581f4f1fa3f84be9586271]
+docker_container.container_server_web_2: Creation complete after 2s [id=67314ea7e3d96377fda7f3aad8d7c947be03f575cbc56a807f21f8200dbbc42f]        
+
+Apply complete! Resources: 2 added, 0 changed, 2 destroyed.
+##
+
