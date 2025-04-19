@@ -69,3 +69,5 @@ variable "web_server_port" {
   type        = number
   default     = 4007
 }
+
+1. crear los archivos variables.tf y terraform.tfvars
