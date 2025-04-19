@@ -8,7 +8,9 @@ terraform {
 }
 
 #proveedor Docker
-provider "docker" {}
+provider "docker" {
+  host = "tcp://localhost:2375/"
+  }
 
 
 # primer contenedor: Nginx
