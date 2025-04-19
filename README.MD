@@ -102,3 +102,11 @@ ademas de tener respuestas afirmativas de ejecucion a los comandos
 
  dando respuesta correcta tanto en la terminal como en navegador web
 
+Trabajo de Laboratorio culminado.
+# Alumno: Luis Angel Guanilo Esteves
+# Curso: Infraestructura como Codigo
+# Docente: LETURIA RODRIGUEZ, WALTER IVAN
+# Carrera: Ingenieria de Computacion y Sistemas
+# Ciclo: VII
+# Universidad Particular Antenor Orrego
+# 2025
