@@ -89,3 +89,16 @@ docker_container.container_server_web_2: Creation complete after 2s [id=67314ea7
 Apply complete! Resources: 2 added, 0 changed, 2 destroyed.
 ##
 
+# verificar la ejecucion de los contenedores
+docker ps
+la salida o respuesta de esta linea de comando es la siguiente
+
+67314ea7e3d9   nginx:latest   "/docker-entrypoint.…"   5 minutes ago   Up 5 minutes   0.0.0.0:4009->80/tcp   server_web_2
+fff9b2bb7485   nginx:latest   "/docker-entrypoint.…"   5 minutes ago   Up 5 minutes   0.0.0.0:4008->80/tcp   server_web
+
+ademas de tener respuestas afirmativas de ejecucion a los comandos
+ curl http://localhost:4008
+ curl http://localhost:4009
+
+ dando respuesta correcta tanto en la terminal como en navegador web
+
